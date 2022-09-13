@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "standard-with-typescript",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "@typescript-eslint/space-before-function-paren": "off",
+        "@typescript-eslint/semi": [1, "always"],
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/require-array-sort-compare": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "comma-dangle": "off",
+        "@typescript-eslint/comma-dangle": "warn",
+        "no-extra-parens": "off",
+        "@typescript-eslint/no-extra-parens": "warn",
+        "arrow-parens": [1, "as-needed"]
+    }
+}
